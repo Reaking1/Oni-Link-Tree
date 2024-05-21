@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok, faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import AnimatedText from './Animated fonts/AnimatedFonts';
  
 function App() {
   useEffect(() => {
@@ -20,22 +21,25 @@ function App() {
       <div className="section_1">
         <div className="box">
           <img src="path-to-your-image.png" alt="Profile" className="profile-image" />
-          <h1>Developer/Streamer</h1>
+          <AnimatedText />
         </div>
+        <div className="other_bar">
+            
+            </div>
          {/* Add Scrap paper bars */}
         <div className="bars">
           <div className="bar">
-            <FontAwesomeIcon icon={faTwitch} beatFade/>
+            <FontAwesomeIcon icon={faTwitch} beat/>
           </div>
           <div className="bar">
-          <FontAwesomeIcon icon={faInstagram} beatFade/>
+          <FontAwesomeIcon icon={faInstagram} beat/>
           </div>
           <div className="bar">
-          <FontAwesomeIcon icon={faYoutube} beatFade/>
+          <FontAwesomeIcon icon={faYoutube} beat/>
           </div>
            {/* Add links to the icons */}
           <div className="bar">
-          <FontAwesomeIcon icon={faTiktok} beatFade/>
+          <FontAwesomeIcon icon={faTiktok} beat/>
           </div>
           {/* Add more bars with icons as needed */}
         </div>

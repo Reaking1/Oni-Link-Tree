@@ -1,0 +1,16 @@
+  /* Import the retro font */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap');
+
+.animated-container {
+    text-align: center;
+  }
+  
+  .animated-text {
+    font-family: 'Press Start 2P', cursive; /* Use a retro font */
+    font-size: 2rem;
+    color: #ffffff; /* Initial color */
+  }
+  
+  /* Import the retro font */
+
+  

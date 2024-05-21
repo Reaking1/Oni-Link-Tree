@@ -13,7 +13,7 @@ body, html {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(270deg, #964cd3, #f2f2f2, #a340ff,#a340ff);
+  background: linear-gradient(270deg, #FF5733, #C70039,#900C3F);
   background-size: 400% 400%;
   position: relative;
 }
@@ -56,4 +56,15 @@ body, html {
 .bar:hover {
   background-color: rgba(255, 255, 255, 0.5);
   transform: scale(1.1);
+}
+
+
+.other_bar {
+  padding:150px;
+  background: #f2f2f2;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  opacity: 0.6;
 }
