@@ -6,6 +6,7 @@ import { faInstagram, faTiktok, faTwitch, faYoutube } from '@fortawesome/free-br
 import { faGamepad, faCode, faKeyboard, faLaptopCode, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import AnimatedText from './Animated fonts/AnimatedFonts';
 import Logo from './assets/Logo.jpeg'
+import Menu from './Menu/menu';
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
   return (
     <>
       <div className="section_1">
+        <Menu /> {/* Add the Menu component */}
         <div className="box">
           <img src={Logo} alt="Profile" className="profile-image" />
           <AnimatedText />
