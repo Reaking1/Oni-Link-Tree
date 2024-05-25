@@ -42,10 +42,34 @@ function App() {
           <AnimatedText />
         </div>
         <div className="other_bar">
-          <div className="rectangular-bar">Bar 1</div>
-          <div className="rectangular-bar">Bar 2</div>
-          <div className="rectangular-bar">Bar 3</div>
-          <div className="rectangular-bar">Bar 4</div>
+          <div className="rectangular-bar">
+           <a href="">
+            <h3>
+              Oni Website
+            </h3>
+           </a>
+          </div>
+          <div className="rectangular-bar">
+          <a href="">
+            <h3>
+              Portfolio
+            </h3>
+           </a>
+          </div>
+          <div className="rectangular-bar">
+          <a href="">
+            <h3>
+              Blog
+            </h3>
+           </a>
+          </div>
+          <div className="rectangular-bar">
+          <a href="">
+            <h3>
+              Anime Top tier least of the week
+            </h3>
+           </a>
+          </div>
         </div>
         <div className="bars">
           <div className="bar">

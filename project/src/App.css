@@ -13,17 +13,15 @@ body, html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 120vh;
   background: linear-gradient(270deg, #964cd3, #4e39ed, #e43066);
   background-size: 400% 400%;
   position: relative;
-  overflow: hidden; /* Ensure icons do not overflow the container */
 }
 
 .box {
   text-align: center;
   margin-bottom: 20px;
-  z-index: 1; /* Ensure the box is above the background icons */
 }
 
 .profile-image {
@@ -35,10 +33,44 @@ body, html {
   margin-bottom: 10px;
 }
 
+.other_bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+  background: #f2f2f2;
+  width: 300px;
+  border-radius: 10px;
+  opacity: 0.9;
+  
+}
+
+.rectangular-bar {
+  width: 100%;
+  background-color: #a67df2;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  color: #f2f2f2;
+}
+
+.rectangular-bar:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
+}
+
+.rectangular-bar a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .bars {
   display: flex;
   gap: 20px;
-  z-index: 2; /* Ensure the bars are above the background icons */
+  margin-top: 20px;
 }
 
 .bar {
@@ -50,7 +82,6 @@ body, html {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   transition: background-color 0.3s, transform 0.3s;
-  z-index: 2; /* Ensure the bar is above the background icons */
 }
 
 .bar i {
@@ -63,55 +94,22 @@ body, html {
   transform: scale(1.1);
 }
 
-.other_bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background: #f2f2f2;
-  width: 300px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  opacity: 0.8;
-  gap: 10px;
-  z-index: 2; /* Ensure the other_bar is above the background icons */
-}
-
-.rectangular-bar {
-  width: 100%;
-  padding: 10px;
-  background-color: #e43066;
-  border-radius: 5px;
-  color: #fff;
-  text-align: center;
-  transition: background-color 0.3s, transform 0.3s;
-  z-index: 2; /* Ensure the rectangular-bar is above the background icons */
-}
-
-.rectangular-bar:hover {
-  background-color: #ff7e5f;
-  transform: scale(1.05);
-}
-
-.animated-container {
-  text-align: center;
-  z-index: 1; /* Ensure the animated text is above the background icons */
-}
-
-.animated-text {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  color: #ffffff;
-}
-
 .background-icons {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  z-index: 0; /* Ensure the icons are behind other elements */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  pointer-events: none;
+}
+
+.background-icon {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .background-icon {
