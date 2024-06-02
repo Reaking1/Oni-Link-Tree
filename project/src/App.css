@@ -127,3 +127,13 @@ body, html {
 .background-icon:nth-child(4) { --top: 80; --left: 30; }
 .background-icon:nth-child(5) { --top: 20; --left: 80; }
 /* Add more custom positions for additional icons */
+
+/* Toastify styles */
+.Toastify__toast {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Toastify__toast--info {
+  background: #4e39ed; /* Change to desired info background color */
+  color: #fff; /* Change to desired text color */
+}

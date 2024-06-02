@@ -1,6 +1,8 @@
 import './App.css';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
+ import { ToastContainer, toast }  from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok, faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faGamepad, faCode, faKeyboard, faLaptopCode, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
@@ -33,6 +35,10 @@ function App() {
     });
   }, []);
 
+  const handleRectangularBarClick = ()  => {
+    toast.info("The website is still under construction")
+  }
+
   return (
     <>
       <div className="section_1">
@@ -42,47 +48,39 @@ function App() {
           <AnimatedText />
         </div>
         <div className="other_bar">
-          <div className="rectangular-bar">
-           <a href="">
+          <div className="rectangular-bar" onClick={handleRectangularBarClick}>
             <h3>
               Oni Website
             </h3>
-           </a>
           </div>
-          <div className="rectangular-bar">
-          <a href="">
+          <div className="rectangular-bar" onClick={handleRectangularBarClick}>
             <h3>
               Portfolio
             </h3>
-           </a>
           </div>
-          <div className="rectangular-bar">
-          <a href="">
+          <div className="rectangular-bar" onClick={handleRectangularBarClick}>
             <h3>
               Blog
             </h3>
-           </a>
           </div>
-          <div className="rectangular-bar">
-          <a href="">
+          <div className="rectangular-bar" onClick={handleRectangularBarClick}>
             <h3>
               Anime Top tier least of the week
             </h3>
-           </a>
           </div>
         </div>
         <div className="bars">
           <div className="bar">
-            <FontAwesomeIcon icon={faTwitch} beat/>
+           <a href='https://www.twitch.tv/theghostking2003'> <FontAwesomeIcon icon={faTwitch} beat/> </a>
           </div>
           <div className="bar">
-            <FontAwesomeIcon icon={faInstagram} beat/>
+           <a  href='https://www.instagram.com/theghostking2003/'><FontAwesomeIcon icon={faInstagram} beat/></a>
           </div>
           <div className="bar">
-            <FontAwesomeIcon icon={faYoutube} beat/>
+            <a href='https://www.youtube.com/channel/UCKr7PWRY5DoeWqHQGb29iPA'> <FontAwesomeIcon icon={faYoutube} beat/> </a>
           </div>
           <div className="bar">
-            <FontAwesomeIcon icon={faTiktok} beat/>
+           <a  href='https://www.tiktok.com/@theghostking2003?is_from_webapp=1&sender_device=pc'> <FontAwesomeIcon icon={faTiktok} beat/> </a>
           </div>
         </div>
         <div className="background-icons">
@@ -94,6 +92,7 @@ function App() {
           {/* Add more icons as needed */}
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 }
