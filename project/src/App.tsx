@@ -84,13 +84,13 @@ function App() {
           </div>
         </div>
         <div className="background-icons">
-          <FontAwesomeIcon icon={faGamepad} className="background-icon" />
-          <FontAwesomeIcon icon={faCode} className="background-icon" />
-          <FontAwesomeIcon icon={faKeyboard} className="background-icon" />
-          <FontAwesomeIcon icon={faLaptopCode} className="background-icon" />
-          <FontAwesomeIcon icon={faMobileAlt} className="background-icon" />
-          {/* Add more icons as needed */}
-        </div>
+  <FontAwesomeIcon icon={faGamepad} className="background-icon" data-testid="gamepad-icon" />
+  <FontAwesomeIcon icon={faCode} className="background-icon" data-testid="code-icon" />
+  <FontAwesomeIcon icon={faKeyboard} className="background-icon" data-testid="keyboard-icon" />
+  <FontAwesomeIcon icon={faLaptopCode} className="background-icon" data-testid="laptop-code-icon" />
+  <FontAwesomeIcon icon={faMobileAlt} className="background-icon" data-testid="mobile-alt-icon" />
+</div>
+
       </div>
       <ToastContainer />
     </>
