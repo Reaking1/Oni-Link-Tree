@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import App from '../App';
 import { ToastContainer } from 'react-toastify';
-import '@testing-library/jest-dom/extend-expect'; // Ensure this is included
+
 
 test('renders profile image and text', () => {
   render(<App/>);
