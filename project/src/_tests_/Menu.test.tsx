@@ -17,7 +17,7 @@ test('renders menu component with links', () => {
   const aboutLink = screen.getByRole('link', { name: /about/i });
   const contactLink = screen.getByRole('link', { name: /contact/i });
 
-  // Ensure the links are in the document
+  // Ensure the links are in the document also change what we are testing for. we want to see if the links will function 
   expect(homeLink).toBeInTheDocument();
   expect(aboutLink).toBeInTheDocument();
   expect(contactLink).toBeInTheDocument();
