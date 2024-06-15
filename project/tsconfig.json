@@ -32,6 +32,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["src", "node_modules/react-router-dom"],
+  "include": ["src", "node_modules/react-router-dom", "_tests_"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

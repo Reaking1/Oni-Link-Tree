@@ -1,16 +1,10 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
   moduleNameMapper: {
     '\\.(css|less)$': 'identity-obj-proxy',
-    '^@/(.*)$': '<rootDir>/src/$1',
-    '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/src/__mocks__/fileMock.js',
+    '\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/_mocks_/fileMock.js',
   },
-  transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest',
-  },
-  transformIgnorePatterns: [
-    '/node_modules/(?!(@testing-library|@fortawesome)/)',
-  ],
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
+  roots: ['<rootDir>/src', '<rootDir>/_tests_'],
 };
