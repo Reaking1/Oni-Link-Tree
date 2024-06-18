@@ -41,8 +41,9 @@ function App() {
 
   return (
     <>
+     <Menu /> {/* Add the Menu component */}
       <div className="section_1">
-        <Menu /> {/* Add the Menu component */}
+
         <div className="box">
           <img src={Logo} alt="Profile" className="profile-image" />
           <AnimatedText />

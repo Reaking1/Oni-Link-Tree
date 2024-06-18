@@ -137,3 +137,38 @@ body, html {
   background: #4e39ed; /* Change to desired info background color */
   color: #fff; /* Change to desired text color */
 }
+
+/* Additional styles for responsiveness */
+@media (max-width: 600px) {
+  .section_1 {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-image {
+    margin-top: 80px; /* Adjust to provide space for the menu button */
+  }
+
+  .box {
+    margin-top: 20px;
+  }
+
+  .other_bar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .rectangular-bar {
+    padding: 10px 5px;
+  }
+
+  .bars {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bar {
+    width: 40px;
+    height: 40px;
+  }
+}
