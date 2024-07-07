@@ -1,4 +1,5 @@
 import './App.css';
+import { Analytics } from "@vercel/analytics/react"
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
  import { ToastContainer, toast }  from "react-toastify"
@@ -94,6 +95,7 @@ function App() {
 
       </div>
       <ToastContainer />
+      <Analytics/> 
     </>
   );
 }
