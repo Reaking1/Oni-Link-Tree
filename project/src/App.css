@@ -73,25 +73,31 @@ body, html {
   color: inherit;
   display: block;
 }
-
 .bars {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  display: flex; /* Flexbox for horizontal layout */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  justify-content: center; /* Center items horizontally */
+  gap: 15px; /* Space between items */
   margin-top: 20px;
 }
 
 .bar {
-  width: 35px;
-  height: 35px;
+  width: 40px; /* Adjust width */
+  height: 40px; /* Adjust height */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2); /* Background color */
   border-radius: 10px;
   transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer; /* Pointer cursor for better UX */
 }
+
+.bar:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Change hover color */
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
 
 .bar i {
   font-size: 20px;
