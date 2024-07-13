@@ -1,7 +1,7 @@
 .menu-container {
   position: absolute;
   top: 20px;
-  left: 40px;
+  left: 20px;
   z-index: 3;
 }
 
@@ -40,6 +40,11 @@
   transition: height 0.5s ease, opacity 0.5s ease;
 }
 
+.dropdown-menu.show {
+  height: auto;
+  opacity: 1;
+}
+
 .dropdown-menu h3 {
   margin: 0 0 10px;
   color: #333;
@@ -47,8 +52,10 @@
 
 .icon-to-link {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Changed from column to row */
   gap: 10px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: center;
 }
 
 .icon-to-link a {
@@ -77,12 +84,11 @@
   font-size: 1rem;
 }
 
-
 /* Responsive design for mobile */
 @media (max-width: 600px) {
   .menu-container {
     top: 10px;
-    right: 10px;
+    left: 10px;
   }
 
   .box {

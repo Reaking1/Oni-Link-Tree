@@ -2,15 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap');
 
 .animated-container {
-    text-align: center;
-  }
-  
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.animated-text {
+  font-family: 'Press Start 2P', cursive; /* Use a retro font */
+  font-size: 2rem;
+  color: #ffffff; /* Initial color */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
   .animated-text {
-    font-family: 'Press Start 2P', cursive; /* Use a retro font */
-    font-size: 2rem;
-    color: #ffffff; /* Initial color */
+    font-size: 1.5rem; /* Adjust font size for mobile */
   }
-  
-  /* Import the retro font */
+}
+
+/* Responsive design for tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .animated-text {
+    font-size: 1.75rem; /* Adjust font size for tablets */
+  }
+}
 
   
