@@ -22,7 +22,7 @@ const AnimatedText: React.FC = () => {
 
     return (
         <div className="animated-conatainer">
-            <h1 className="animated-text">Developer/Streamer</h1>
+            <h2 className="animated-text">Developer/Streamer</h2>
         </div>
     )
 }
